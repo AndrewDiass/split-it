@@ -19,9 +19,10 @@ class HomePage extends StatelessWidget {
           preferredSize: Size.fromHeight(180.0),
           child: Container(
             height: 180,
-            padding: EdgeInsets.symmetric(horizontal: 24),
+            padding: EdgeInsets.symmetric(horizontal: 24).copyWith(top: 24),
             decoration: BoxDecoration(gradient: AppTheme.gradients.background),
             child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Row(
