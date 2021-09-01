@@ -6,6 +6,8 @@ import 'app_theme.dart';
 abstract class AppTextStyles {
   TextStyle get title;
   TextStyle get button;
+  TextStyle get nameAppBar;
+  TextStyle get helloAppBar;
 }
 
 class AppTextStylesDefault implements AppTextStyles {
@@ -23,5 +25,19 @@ class AppTextStylesDefault implements AppTextStyles {
         color: AppTheme.colors.title,
         fontSize: 40,
         fontWeight: FontWeight.w700,
+      );
+
+  @override
+  // TODO: implement title
+  get nameAppBar => GoogleFonts.montserrat(
+        fontSize: 20,
+        fontWeight: FontWeight.w700,
+      );
+
+  @override
+  // TODO: implement title
+  get helloAppBar => GoogleFonts.montserrat(
+        fontSize: 20,
+        fontWeight: FontWeight.w400,
       );
 }
